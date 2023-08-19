@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: $primaryTextColor;
+    font-family: $fontFamily;
+}
+
+input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    outline: none;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}

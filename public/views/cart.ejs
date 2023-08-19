@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <a href="/">Back to Home</a>
+</body>
+<script>
+    const coupons = [];
+    const savedCoupons = JSON.parse(localStorage.getItem("coupons"));
+  if (savedCoupons) {
+    coupons.push(...savedCoupons);
+  }
+  console.log(coupons);
+</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d956b8aba5.js" crossorigin="anonymous"></script>
+    <script src="./dist/bundle.index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logoContainer" >קופונים.com</div>
+        <div class="rightMenu">
+            <div class="menuCotainer">
+                <ul>
+                    <li>קופונים חמים</li>
+                    <li>חנויות</li>
+                    <li>שלח קופון</li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-bars" ></i>
+            </div>
+        </div>
+        
+    </div>
+    <div class="searchSection">
+        <img src="./resources/svg/rightAnimation.svg" class="animation right" alt="" width="auto" height="100%">
+        <img src="./resources/svg/leftAnimation.svg" class="animation left" alt="" width="auto" height="100%">
+            
+        <div class="text">
+            <div class="title">!מבצעים וקופונים לכל החנויות הכי שוות בארץ ובעולם</div>
+        <div class="paragraph" dir="rtl">יש לך קופון שלא קיים אצלנו?.. <a href="http://">לחץ כאן</a> </div>
+        </div>
+        <div class="searchbar">
+            <button><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            <input type="text" dir="rtl" placeholder="חפש: קופונים, חנויות">
+        </div>
+    </div>
+    <div class="bottomContainer">
+        <div class="categories">
+            <ul dir="rtl">
+                <li>כל הקופונים</li>
+                <li>ביגוד</li>
+                <li>קוסמטיקה</li>
+                <li>הנעלה</li>
+                <li>מוצרים לבית</li>
+                <li>תכשיטים</li>
+                <li>פארם</li>
+                <li>אקססוריז</li>
+                <li>ילדים</li>
+                <li>ספורט</li>
+            </ul>
+        </div>
+        <div id="coupons">
+            <div class="coupon" data-coupon-id="coupon1" data-store-name="shein">
+                <h2 class="description">30$</h2>
+                <p class="restrictions">אין כפל מבצעים</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="coupon" data-coupon-id="coupon2" data-store-name="wolt">
+                <h2 class="description">1000$</h2>
+                <p class="restrictions">בקנייה מעל 300$</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- More coupons can be added here -->
+        </div>
+
+
+        <!-- <div class="productsContainer">
+            <div class="cardComponent">
+                <div class="logoContainer"><img src="./resources/images/gett.png" alt=""></div>
+                <div class="textContainer">
+                    <h1>גט-טקסי</h1>
+                    <p>25₪ ל-2 הזמנות</p>
+                </div>
+                <div class="bottomContainer"><button>הוסף לסל</button></div>
+            </div>
+            <div class="cardComponent">
+                <div class="logoContainer"><img src="./resources/images/gett.png" alt=""></div>
+                <div class="textContainer">
+                    <h1>גט-טקסי</h1>
+                    <p>25₪ ל-2 הזמנות</p>
+                </div>
+                <div class="bottomContainer"><button>הוסף לסל</button></div>
+            </div>
+        </div> -->
+    <script src="./src/cart.js"></script>
+    </div>
+</body>
+</html>

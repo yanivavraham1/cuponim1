@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+</head>
+<body onload="fetchStores()">
+    <form id="couponForm">
+        <label for="storeSelect">Select Store:</label>
+        <select id="storeSelect" name="storeSelect"></select>
+        <br>
+        <label for="couponCode">Coupon Code:</label>
+        <input type="text" id="couponCode" name="couponCode">
+        <input type="checkbox" id="couponCodeExists" name="couponCodeExists" value="yes" checked onchange="toggleField('couponCode', 'couponCodeExists')">
+        <label for="couponCodeExists">Coupon Code Exists</label>
+        <br>
+
+        <label for="expireDate">Expiration Date:</label>
+        <input type="date" id="expireDate" name="expireDate">
+        <input type="checkbox" id="expireDateExists" name="expireDateExists" value="yes" checked onchange="toggleField('expireDate', 'expireDateExists')">
+        <label for="expireDateExists">Expiration Date Exists</label>
+        <br>
+
+        <label for="restrictions">Restrictions:</label>
+        <textarea id="restrictions" name="restrictions" rows="4" cols="50"></textarea>
+        <br>
+
+        <label for="couponUrl">Coupon URL:</label>
+        <input type="text" id="couponUrl" name="couponUrl">
+        <input type="checkbox" id="couponUrlExists" name="couponUrlExists" value="yes" checked onchange="toggleField('couponUrl', 'couponUrlExists')">
+        <label for="couponUrlExists">Coupon URL Exists</label>
+        <br>
+
+        <label for="couponDescription">Coupon Description:</label>
+        <textarea id="couponDescription" name="couponDescription" rows="6" cols="50"></textarea>
+        <br>
+
+        <input type="submit" value="Submit" onclick="registerCoupon()">
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>

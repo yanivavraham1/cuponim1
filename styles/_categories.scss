@@ -1,0 +1,28 @@
+.categories{
+    font-size: 16px;
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.14);
+    position: relative;
+    z-index: 2;
+    
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+        list-style: none;
+        max-width: 800px;
+        margin: 0 auto;
+
+        li{
+            text-align: center;
+            line-height: 40px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+        }
+        li:hover{
+            background-color: rgb(232, 232, 232);
+        }
+    }
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form id="storeForm">
+      <label for="storeNameEnglish">Store Name (English):</label>
+      <input type="text" id="storeNameEnglish" name="storeNameEnglish" required><br><br>
+
+      <label for="storeNameHebrew">Store Name (Hebrew):</label>
+      <input type="text" id="storeNameHebrew" name="storeNameHebrew" required><br><br>
+
+      <label for="category">Select Category:</label>
+
+      <label>
+        <input type="checkbox" name="categories" value="clothing"> Clothing
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="electronics"> Electronics
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="grocery"> Grocery
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="furniture"> Furniture
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="books"> Books
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="health & beauty"> Health & Beauty
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="home improvement"> Home Improvement
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="sports & outdoor"> Sports & Outdoors
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="automotive"> Automotive
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="jewelry"> Jewelry
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="food"> Food
+      </label><br>
+      <label>
+        <input type="checkbox" name="categories" value="shopping">Shopping
+      </label><br>
+
+
+      <label for="description">Store Description:</label>
+      <textarea id="description" name="description" required></textarea><br><br>
+
+      <label for="keywords">Keywords:</label>
+      <textarea id="keywords" name="keywords" required></textarea><br><br>
+
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" required><br><br>
+
+      <label for="logo">Logo:</label>
+      <input type="file" id="logo" name="logo" accept="image/*" required><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
